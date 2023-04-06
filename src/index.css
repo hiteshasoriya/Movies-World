@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #000;
+  color: white;
+}
+
+.card{
+  background-color: #1d1c1c;
+}
+
+.header {
+  background: #222020;
+}
+.review{
+  background: #061a1ba6;
+}
