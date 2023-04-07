@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import {getFirestore, collection} from'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAvsUpZbinHac75uOXJx4XeRQczmTLCLMA",
-  authDomain: "movieworld-285a8.firebaseapp.com",
+  apiKey: process.env.REACT_APP_SECRET_KEY,
+  authDomain: process.env.DOMAIN,
   projectId: "movieworld-285a8",
   storageBucket: "movieworld-285a8.appspot.com",
   messagingSenderId: "150512753475",
-  appId: "1:150512753475:web:c8b88e0467fb46cd3fadf6"
+  appId: process.env.APPID
 };
 
 const app = initializeApp(firebaseConfig);
